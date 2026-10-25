@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111318">
+  <meta name="description" content="Portofolio Maesa Zuda Pratama, mahasiswa Sistem Informasi yang tertarik pada pengembangan web, basis data, dan analisis kebutuhan sistem.">
+  <title>Maesa Zuda Pratama — Portfolio Cihuy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js-ready');</script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <canvas class="bg-canvas" id="bgCanvas" aria-hidden="true"></canvas>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Maesa Zuda Pratama, kembali ke beranda">maesa<span>.</span><small>PORTFOLIO</small></a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+        <a href="#journey">Perjalanan</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Aktifkan mode terang" title="Ganti tema">
+          <span class="theme-symbol" aria-hidden="true">☼</span>
+          <span class="theme-label">Mode terang</span>
+        </button>
+
+        <a class="header-contact" href="#contact">Mari terhubung <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka navigasi" aria-controls="navLinks" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="home" aria-labelledby="heroTitle">
+
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="status-dot"></span> MAHASISWA SISTEM INFORMASI <span class="eyebrow-year">/ 2026</span></p>
+
+          <h1 id="heroTitle" class="hero-title reveal">
+            Menyambungkan
+            <span class="hero-blue">ide, data,</span>
+            <span>dan teknologi<span class="hero-period">.</span></span>
+          </h1>
+
+          <p class="hero-role reveal" aria-label="Sedang berkembang sebagai web developer, analis sistem, dan problem solver">Sedang bertumbuh sebagai <span id="typed" class="typed-text">Web Developer</span><i class="caret" aria-hidden="true"></i></p>
+          <p class="hero-lead reveal">Halo, saya <strong>Maesa Zuda Pratama.</strong> Saya sedang membangun kemampuan di bidang pengembangan web, basis data, dan analisis sistem — satu proyek dan satu pelajaran pada satu waktu.</p>
+          <p class="hero-actions reveal">Kerja sewajarnya saja karena saya bukan budak korporat.</p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#projects">Jelajahi proyek <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="assets/CV-Maesa-Zuda-Pratama.pdf" target="_blank" rel="noopener">Lihat CV <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <div class="hero-footnote reveal"><span class="footnote-mark">✳</span><span>Terus belajar. Tetap penasaran. Terbuka pada peluang baru.</span></div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-label label-top"><span>PROFILE / 001</span><span>MAESA Z.</span></div>
+          <div class="portrait-frame">
+            <div class="portrait-accent" aria-hidden="true"></div>
+            <img class="portrait-photo" src="assets/KBR.jpeg" alt="Foto profil Maesa Zuda Pratama" fetchpriority="high">
+            <div class="portrait-sticker" aria-label="Fokus pada proses belajar"><span class="sticker-star" aria-hidden="true">✳</span><span>ALWAYS<br>LEARNING</span></div>
+          </div>
+          <div class="portrait-label label-bottom"><span>TANGERANG, INDONESIA</span><span>OPEN TO OPPORTUNITIES <span class="mini-arrow" aria-hidden="true">↗</span></span></div>
+          <div class="hero-index" aria-hidden="true">MZP<br><span>26—</span></div>
+        </div>
+      </div>
+      <div class="container hero-bottom-row"><span>SCROLL UNTUK MENJELAJAHI</span><span class="scroll-line" aria-hidden="true"></span><span>01 / 05</span></div>
+    </section>
+
+    <div class="ticker" aria-label="Bidang yang saya pelajari">
+      <div class="ticker-track">
+        <span>SYSTEM THINKING <b>✳</b></span><span>WEB DEVELOPMENT <b>✳</b></span><span>DATABASE <b>✳</b></span><span>CONTINUOUS LEARNING <b>✳</b></span>
+        <span aria-hidden="true">SYSTEM THINKING <b>✳</b></span><span aria-hidden="true">WEB DEVELOPMENT <b>✳</b></span><span aria-hidden="true">DATABASE <b>✳</b></span><span aria-hidden="true">CONTINUOUS LEARNING <b>✳</b></span>
+      </div>
+    </div>
+
+    <section class="section section-about" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-kicker reveal"><span>01</span><span>TENTANG SAYA</span><span class="kicker-line"></span></div>
+        <div class="about-grid">
+          <div class="about-heading reveal">
+            <h2 id="aboutTitle">Rasa ingin tahu adalah <span class="text-highlight">titik awal.</span></h2>
+            <p class="about-aside">Sedang menata langkah, menjaga rasa ingin tahu, dan menjemput rasa yang baru.</p>
+          </div>
+          <div class="about-body reveal">
+            <p class="about-lead">Saya mahasiswa S1 Sistem Informasi di Universitas Insan Pembangunan Indonesia yang tertarik pada pertemuan antara teknologi, data, dan kebutuhan manusia.</p>
+            <p>Saya memiliki pengalaman di bidang administrasi, ritel, quality control, dan pengawasan lapangan. Kebolehan tersebut membantu saya memahami pentingnya ketelitian, prosedur kerja, komunikasi, dan kolaborasi. Sekarang saya terus memperkuat fondasi teknis melalui pembelajaran dan proyek akademik.</p>
+            <p>Tujuan saya ke depan adalah berkontribusi pada tim yang membangun sistem informasi yang rapi dan bermanfaat, sambil terus memperdalam web, basis data, dan analisis sistem. <!-- Sesuaikan kalimat ini dengan tujuan kariermu sendiri. --></p>
+            <div class="about-facts">
+              <div><span class="fact-label">FOKUS SAAT INI</span><strong>Web · Database · Analisis Sistem</strong></div>
+              <div><span class="fact-label">PENDIDIKAN</span><strong>S1 Sistem Informasi</strong></div>
+              <div><span class="fact-label">BERBASIS DI</span><strong>Tangerang, Banten</strong></div>
+              <div><span class="fact-label">SIKAP KERJA</span><strong>Teliti · Adaptif · Mau belajar</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-skills" id="skills" aria-labelledby="skillsTitle">
+      <div class="container">
+        <div class="section-kicker reveal"><span>02</span><span>PERANGKAT YANG SAYA PELAJARI</span><span class="kicker-line"></span></div>
+        <div class="section-heading-row reveal">
+          <h2 id="skillsTitle">Skill set <span class="text-highlight">in progress.</span></h2>
+          <p>Kemampuan adalah proses. Saya memiliki teknologi dan alat yang sedang saya pelajari serta gunakan.</p>
+        </div>
+        <div class="filter-row reveal" role="group" aria-label="Filter kategori keahlian">
+          <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">Semua <span>10</span></button>
+          <button class="filter-chip" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button class="filter-chip" type="button" data-filter="backend" aria-pressed="false">Backend &amp; data</button>
+          <button class="filter-chip" type="button" data-filter="tools" aria-pressed="false">Tools</button>
+        </div>
+        <ul class="skill-grid" id="skillGrid">
+          <li class="skill-card reveal" data-cat="frontend"><span class="skill-number">01</span><span class="skill-symbol symbol-orange">&lt;/&gt;</span><strong>HTML5</strong><small>Struktur web</small><span class="skill-level" data-level="2" role="img" aria-label="Level: Berlatih" title="Berlatih"><i></i><i></i><i></i></span></li>
+          <li class="skill-card reveal" data-cat="frontend"><span class="skill-number">02</span><span class="skill-symbol symbol-blue">✳</span><strong>CSS3</strong><small>Desain &amp; layout</small><span class="skill-level" data-level="2" role="img" aria-label="Level: Berlatih" title="Berlatih"><i></i><i></i><i></i></span></li>
+          <li class="skill-card reveal" data-cat="frontend"><span class="skill-number">03</span><span class="skill-symbol symbol-lime">JS</span><strong>Mas JavaScript</strong><small>Interaksi dasar</small><span class="skill-level" data-level="1" role="img" aria-label="Level: Mengenal" title="Mengenal"><i></i><i></i><i></i></span></li>
+          <li class="skill-card reveal" data-cat="backend"><span class="skill-number">04</span><span class="skill-symbol symbol-orange">Py</span><strong>Penjinak Python</strong><small>Logika &amp; pemodelan</small><span class="skill-level" data-level="2" role="img" aria-label="Level: Berlatih" title="Berlatih"><i></i><i></i><i></i></span></li>
+          <li class="skill-card reveal" data-cat="backend"><span class="skill-number">05</span><span class="skill-symbol symbol-blue">SQL</span><strong>MySQL</strong><small>Basis data</small><span class="skill-level" data-level="1" role="img" aria-label="Level: Mengenal" title="Mengenal"><i></i><i></i><i></i></span></li>
+          <li class="skill-card reveal" data-cat="backend"><span class="skill-number">06</span><span class="skill-symbol symbol-lime">PHP</span><strong>Di PHP in</strong><small>Dasar backend</small><span class="skill-level" data-level="1" role="img" aria-label="Level: Mengenal" title="Mengenal"><i></i><i></i><i></i></span></li>
+          <li class="skill-card reveal" data-cat="tools"><span class="skill-number">07</span><span class="skill-symbol symbol-orange">⌘</span><strong>Git &amp; GitHub</strong><small>Version control</small><span class="skill-level" data-level="2" role="img" aria-label="Level: Berlatih" title="Berlatih"><i></i><i></i><i></i></span></li>
+          <li class="skill-card reveal" data-cat="tools"><span class="skill-number">08</span><span class="skill-symbol symbol-blue">▧</span><strong>VS Code</strong><small>Code editor</small><span class="skill-level" data-level="2" role="img" aria-label="Level: Berlatih" title="Berlatih"><i></i><i></i><i></i></span></li>
+          <li class="skill-card reveal" data-cat="tools"><span class="skill-number">09</span><span class="skill-symbol symbol-lime">◈</span><strong>Figma</strong><small>Eksplorasi UI/UX</small><span class="skill-level" data-level="1" role="img" aria-label="Level: Mengenal" title="Mengenal"><i></i><i></i><i></i></span></li>
+          <li class="skill-card reveal" data-cat="tools"><span class="skill-number">10</span><span class="skill-symbol symbol-orange">▤</span><strong>Microsoft Office</strong><small>Dokumen &amp; administrasi</small><span class="skill-level" data-level="3" role="img" aria-label="Level: Terbiasa" title="Terbiasa"><i></i><i></i><i></i></span></li>
+        </ul>
+        <p class="skill-legend reveal"><span class="skill-level" data-level="1" aria-hidden="true"><i></i><i></i><i></i></span> Mengenal <span class="skill-level" data-level="2" aria-hidden="true"><i></i><i></i><i></i></span> Berlatih <span class="skill-level" data-level="3" aria-hidden="true"><i></i><i></i><i></i></span> Terbiasa <!-- Ubah data-level (1–3) pada tiap kartu sesuai kemampuan aslimu. --></p>
+        <p class="skills-note reveal"><span class="note-icon">↗</span> Daftar ini menggambarkan area yang saya pelajari, bukan klaim tingkat kemahiran untuk unjuk kebolehan.</p>
+      </div>
+    </section>
+
+    <section class="section section-projects" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-kicker reveal"><span>03</span><span>PROYEK &amp; EKSPLORASI</span><span class="kicker-line"></span></div>
+        <div class="section-heading-row projects-heading reveal">
+          <h2 id="projectsTitle">Belajar dengan <span class="text-highlight">membangun.</span></h2>
+          <p>Proyek akademik dan studi kasus yang membantu saya mengubah teori menjadi latihan nyata.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-topline"><span class="project-type"><span class="project-type-dot"></span> PROYEK AKADEMIK</span><span class="project-index">P—01</span></div>
+            <div class="project-visual visual-relations" aria-hidden="true">
+              <div class="node node-a">A</div><div class="node node-b">B</div><div class="node node-c">C</div><div class="node node-d">D</div>
+              <svg viewBox="0 0 480 170" role="presentation"><path d="M64 85 C115 28 150 28 202 85 S290 142 340 85 S408 28 435 85"/><path d="M64 85 C130 140 156 140 202 85 S288 28 340 85 S400 140 435 85"/></svg>
+              <span class="visual-caption">RELATION / FUNCTION / PYTHON</span>
+            </div>
+            <div class="project-content"><div class="project-title-row"><h3>SocialRelation</h3><span class="status-pill">Dalam pengembangan</span></div><p>Simulasi relasi dan fungsi pertemanan media sosial dengan Python sebagai latihan matematika diskrit, termasuk pemetaan pengguna dan jumlah koneksi.</p><dl class="ps"><div><dt>Masalah</dt><dd>Relasi dan fungsi sulit dipahami hanya lewat teori.</dd></div><div><dt>Solusi</dt><dd>Dimodelkan dalam Python: memetakan pengguna dan menghitung jumlah koneksi.</dd></div></dl><ul class="tag-list"><li>Python</li><li>Matematika Diskrit</li><li>Console App</li></ul></div>
+            <div class="project-bottom"><span>STUDI KASUS KULIAH</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline"><span class="project-type"><span class="project-type-dot orange-dot"></span> STUDI KASUS</span><span class="project-index">P—02</span></div>
+            <div class="project-visual visual-library" aria-hidden="true"><div class="library-window"><div class="window-bar"><i></i><i></i><i></i><span>BOOKS / OVERVIEW</span></div><div class="library-columns"><div class="library-side"><b></b><b></b><b></b><b></b></div><div class="library-main"><div class="library-stat"></div><div class="library-row"></div><div class="library-row short"></div><div class="library-row"></div></div></div></div><span class="visual-caption">PROCESS / RECORD / RETURN</span></div>
+            <div class="project-content"><div class="project-title-row"><h3>Sistem Informasi Tempat Kerja</h3><span class="status-pill status-concept">Konsep</span></div><p>Rancangan studi kasus untuk alur data anggota, katalog laporan, pendataan, dan pengiriman agar proses lebih terstruktur.</p><dl class="ps"><div><dt>Masalah</dt><dd>Pencatatan anggota, katalog, dan peminjaman yang tidak terstruktur mudah menimbulkan kesalahan.</dd></div><div><dt>Solusi</dt><dd>Merancang alur data agar data masuk dan keluar tercatat jelas.</dd></div></dl><ul class="tag-list"><li>System Analysis</li><li>Database</li><li>PHP · MySQL</li></ul></div>
+            <div class="project-bottom"><span>IDE / RANCANGAN</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-topline"><span class="project-type"><span class="project-type-dot blue-dot"></span> EKSPLORASI</span><span class="project-index">P—03</span></div>
+            <div class="project-visual visual-dashboard" aria-hidden="true"><div class="dash-sidebar"><span>m.</span><i></i><i></i><i></i></div><div class="dash-content"><div class="dash-title"></div><div class="dash-metrics"><i></i><i></i><i></i></div><div class="chart-box"><div class="chart-label">MONTHLY OVERVIEW</div><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div><span class="visual-caption">DATA / INSIGHT / DECISION</span></div>
+            <div class="project-content"><div class="project-title-row"><h3>Dashboard Penjualan</h3><span class="status-pill status-concept">Konsep</span></div><p>Eksplorasi ide dashboard untuk merangkum tren penjualan, kategori produk, dan indikator kinerja dalam tampilan yang mudah dipahami.</p><dl class="ps"><div><dt>Masalah</dt><dd>Data penjualan mentah sulit dibaca sebagai tren.</dd></div><div><dt>Solusi</dt><dd>Merancang tampilan ringkas berisi metrik utama dan grafik bulanan.</dd></div></dl><ul class="tag-list"><li>JavaScript</li><li>Data Visualization</li><li>UI Design</li></ul></div>
+            <div class="project-bottom"><span>IDE / RANCANGAN</span><span class="project-arrow" aria-hidden="true">↗</span></div>
+          </article>
+        </div>
+        <!-- Jika proyek sudah punya repo: ganti teks "STUDI KASUS" pada kartu dengan tautan <a href="https://github.com/maesaom/NAMA-REPO" target="_blank" rel="noopener">Lihat kode</a> -->
+<p class="project-disclaimer reveal"><span aria-hidden="true">✳</span> Catatan: SocialRelation ditampilkan sebagai proyek akademik yang sedang dikembangkan. Dua kartu lainnya adalah konsep studi kasus, bukan klaim bahwa aplikasi sudah selesai.</p>
+      </div>
+    </section>
+
+    <section class="section section-journey" id="journey" aria-labelledby="journeyTitle">
+      <div class="container">
+        <div class="section-kicker reveal"><span>04</span><span>PERJALANAN</span><span class="kicker-line"></span></div>
+        <div class="section-heading-row journey-heading reveal"><h2 id="journeyTitle">Pengalaman membentuk <span class="text-highlight">perspektif.</span></h2><p>Setiap ruang belajar dan tempat kerja memberi pelajaran yang berbeda.</p></div>
+        <div class="journey-grid">
+          <div class="journey-column reveal">
+            <div class="column-heading"><span class="column-icon column-icon-lime">✳</span><h3>Pendidikan</h3></div>
+            <ol class="timeline">
+              <li><span class="timeline-date">2026 — SEKARANG</span><h4>Universitas Insan Pembangunan Indonesia</h4><p>S1 Sistem Informasi</p><span class="timeline-detail">Mendalami hubungan teknologi, proses bisnis, dan informasi.</span></li>
+              <li><span class="timeline-date">2022 — 2025</span><h4>SMA Negeri 24 Kabupaten Tangerang</h4><p>MIPA · Kurikulum 2013</p><span class="timeline-detail">Belajar, mengerjakan proyek sekolah, dan mengikuti kegiatan ekstrakurikuler.</span></li>
+            </ol>
+          </div>
+          <div class="journey-column reveal">
+            <div class="column-heading"><span class="column-icon column-icon-orange">↗</span><h3>Pengalaman kerja</h3></div>
+            <ol class="timeline">
+              <li><span class="timeline-date">AGUSTUS — DESEMBER 2026</span><h4>PT Barokah Amanah Sentosa</h4><p>Staf Administratif</p><span class="timeline-detail">Administrasi dan dukungan proses operasional.</span></li>
+              <li><span class="timeline-date">APRIL — JUNI 2026</span><h4>PT Indomarco Prismatama</h4><p>Store Crew Boy · Seasonal</p><span class="timeline-detail">Dukungan operasional ritel dan pelayanan toko.</span></li>
+              <li><span class="timeline-date">JANUARI — APRIL 2026</span><h4>PT Ancol Timur Mandiri</h4><p>Quality Control &amp; Operator</p><span class="timeline-detail">Pengecekan kualitas dan dukungan proses kerja.</span></li>
+              <li><span class="timeline-date">AGUSTUS 2025 — JANUARI 2026</span><h4>PT Teknologi Digital Nusantara</h4><p>Pengawas Lapangan</p><span class="timeline-detail">Koordinasi dan pemantauan kegiatan lapangan.</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    <!-- OPSIONAL: tambahkan kolom Sertifikat/Organisasi HANYA jika benar-benar kamu miliki. Salin pola <div class="journey-column reveal"> di atas. -->
+</section>
+
+
+    <section class="contact-section" id="contact" aria-labelledby="contactTitle">
+      <div class="contact-shape" aria-hidden="true">✳</div>
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <div class="section-kicker section-kicker-light"><span>05</span><span>LANGKAH BERIKUTNYA</span><span class="kicker-line"></span></div>
+          <h2 id="contactTitle">Punya ide?<br><span>Mari mulai percakapan.</span></h2>
+          <p>Saya terbuka untuk bertukar ide, berkolaborasi dalam proyek, dan mengeksplorasi peluang yang relevan dengan perjalanan saya di bidang Sistem Informasi.</p>
+          <a class="contact-email" href="mailto:maesaom2006@gmail.com">maesaom2006@gmail.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="contact-side reveal">
+          <p class="contact-side-label">TEMUKAN SAYA DI</p>
+          <a class="social-link" href="https://github.com/maesaom" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span class="social-detail">Kode &amp; eksplorasi</span><span aria-hidden="true">↗</span></a>
+          <a class="social-link" href="https://www.instagram.com/omaestyous/" target="_blank" rel="noopener noreferrer"><span>Instagram</span><span class="social-detail">Aktivitas &amp; cerita</span><span aria-hidden="true">↗</span></a>
+          <a class="social-link" href="https://wa.me/6281389406275" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><span class="social-detail">Hubungi langsung</span><span aria-hidden="true">↗</span></a>
+          <form class="contact-form" id="contactForm">
+            <label for="senderName">Atau tinggalkan pesan</label>
+            <input id="senderName" name="name" type="text" placeholder="Nama kamu" autocomplete="name" required>
+            <input id="senderEmail" name="email" type="email" placeholder="Email kamu" autocomplete="email" required>
+            <textarea id="senderMessage" name="message" rows="3" placeholder="Ceritakan sedikit tentang pesanmu..." required></textarea>
+            <button class="button button-lime" type="submit">Buka aplikasi email <span aria-hidden="true">↗</span></button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite">Form ini membuka aplikasi email; pesan tidak dikirim langsung dari website.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><a class="footer-brand" href="#home">maesa<span>.</span></a><p>Dibuat dengan rasa ingin tahu, HTML, CSS, dan JavaScript.</p><a class="back-top" href="#home">KEMBALI KE ATAS ↑</a><span class="footer-year">© <span id="year"></span> MAESA ZUDA PRATAMA</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
